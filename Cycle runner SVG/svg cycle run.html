@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		#front{
+			width: 160px;
+			height: 160px;
+			border-radius: 50%;
+			border:8px solid black;
+			position: absolute;
+			top:160px;
+			left: 50px;
+			animation: rotate 1.5s linear infinite;
+		}
+		#back{
+			width: 160px;
+			height: 160px;
+			border-radius: 50%;
+			border:8px solid black;
+			position: absolute;
+			top: 160px;
+			left: 350px;
+			animation:rotate 1.5s linear infinite;
+		}
+		@keyframes rotate{
+			from{transform: rotate(-360deg);}
+		}
+		#line{
+			width: 90px;
+			height: 0px;
+			position: absolute;
+			border:6px solid red;
+			top: 240px;
+			left: 140px;
+		}
+		#circle{
+			width: 20px;
+			height: 20px;
+			position: absolute;
+			top: 230px;
+			left: 130px;
+			border:1px solid black;
+			border-radius: 50%;
+			background-color: black;
+			    z-index: 20;
+		}
+		#circle2{
+			width: 40px;
+			height: 40px;
+			position: absolute;
+			top: 215px;
+			left: 210px;
+			border-radius: 50%;
+			border:8px solid black;
+		}
+		#circle3{
+			width: 20px;
+			height: 20px;
+			position: absolute;
+			top: 230px;
+			left: 430px;
+			border:1px solid black;
+			border-radius: 50%;
+			background-color: black;
+			    z-index: 5;
+		}
+		#line2{
+			width: 110px;
+			height: 0px;
+			position: absolute;
+			border:4px solid red;
+			top: 180px;
+			left: 110px;
+			transform: rotate(-60deg);
+		}
+		#line3{
+			width: 115px;
+			height: 0px;
+			position: absolute;
+			border:4px solid red;
+			top: 185px;
+			left: 160px;
+			transform: rotate(65deg);
+		}
+		#circle4{
+			width: 30px;
+			height: 30px;
+			position: absolute;
+			top: 225px;
+			left: 225px;
+			border:1px solid red;
+			border-radius: 50%;
+			background-color: red;
+		}
+		#line4{
+			width: 200px;
+			height: 0px;
+			position: absolute;
+			border:4px solid red;
+			top: 130px;
+			left: 190px;
+		}
+		#seat{
+			position: absolute;
+			top: 110px;
+			left: 190px;
+			width: 30px;
+			height: 30px;
+			border-radius: 20%;
+			border:1px solid red;
+			background-color: red;
+		}
+		#base{
+			position: absolute;
+			top: 110px;
+			left: 195px;
+			width: 50px;
+			height: 20px;
+			border-radius: 50%;
+			background-color: red;
+			border-bottom-left-radius: 110px; 
+    		border-bottom-right-radius: 110px;
+		}
+		#frontline{
+			width: 115px;
+			height: 0px;
+			position: absolute;
+			border:4px solid red;
+			top: 185px;
+			left: 360px;
+			transform: rotate(65deg);
+		}
+		#handle{
+			width: 10px;
+			height: 20px;
+			position: absolute;
+			top: 112px;
+			left: 390px;
+			background-color: red;
+		}
+		#handlebar{
+			width: 10px;
+    		height: 50px;
+    		position: absolute;
+    		top: 85px;
+    		left: 390px;
+    		background-color: red;
+    		transform: rotateZ(119deg);
+		}
+		#pedal{
+			width: 10px;
+    		height: 100px;
+    		position: absolute;
+    		top: 195px;
+    		left: 235px;
+    		background-color: red;
+    	animation: pedal 1.5s linear infinite;
+    		
+		}
+		@keyframes pedal{
+			from{transform: rotate(-360deg)}
+		}
+		
+		#three{
+			       width: 8px;
+				    height: 170px;
+				    position: absolute;
+				    top: 161px;
+				    left: 136px;
+				    background-color: black;
+				    transform: rotate(0deg);
+			    animation: rotate 1.5s linear infinite;
+		}	
+		#four{
+			        width: 164px;
+				    height: 7px;
+				    position: absolute;
+				    top: 238px;
+				    left: 56px;
+				    background-color: black;
+			    animation: rotate 1.5s linear infinite;
+			  
+		}
+		@keyframes moves {
+			from{
+				transform: rotate(-360deg);
+			}
+		}
+		#one{
+			       width: 8px;
+				    height: 170px;
+				    position: absolute;
+				    top: 161px;
+				    left: 436px;
+				    background-color: black;
+				    transform: rotate(0deg);
+			    animation: pedal 1.5s linear infinite;
+		}	
+		#two{
+			        width: 164px;
+				    height: 7px;
+				    position: absolute;
+				    top: 238px;
+				    left: 356px;
+				    background-color: black;
+			    animation: pedal 1.5s linear infinite;
+			  
+		}
+
+		
+
+
+	</style>
+</head>
+<body>
+
+	<div>
+		<div id="back"></div>
+		<div id="line"></div>
+		<div id="circle"></div>
+		<div id="circle2"></div>
+		<div id="circle3"></div>
+		<div id="circle4"></div>
+		<div id="line2"></div>
+		<div id="line3"></div>
+		<div id="seat"></div>
+		<div id="base"></div>
+		<div id="line4"></div>
+		<div id="front"></div>
+		<div id="frontline"></div>
+		<div id="handle"></div>
+		<div id="handlebar"></div>
+		<div id="pedal"></div>
+		<div id="one"></div>
+		<div id="two"></div>
+		<div id="three"></div>
+		<div id="four"></div>
+		<div id="step"></div>
+	</div>
+
+</body>
+</html>
